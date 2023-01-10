@@ -8,12 +8,11 @@ public class Problema_par_impar {
 		int n,numero_novo;
 		System.out.print("Quantos numeros você quer digitar? ");
 		n = ler.nextInt();
-		
-		
+			for (int contador = 1;contador <=n ;contador ++){
+
+				System.out.print("Digite um numero: ");
+				numero_novo = ler.nextInt();
 			
-			System.out.print("Digite um numero: ");
-			numero_novo = ler.nextInt();
-			for (int contador = 1;contador <=n ;contador ++)
 				if((numero_novo%2==1)&&(numero_novo <= -1)) {
 					System.out.println("IMPAR NEGATIVO");
 				}
@@ -28,6 +27,7 @@ public class Problema_par_impar {
 				}
 				else if(numero_novo == 0){
 					System.out.println("NULO");
+			}
 			}
 		}
 	}
